@@ -1,0 +1,23 @@
+---
+const { current = '/' } = Astro.props;
+---
+<header class="sticky top-0 z-50">
+  <div class="mx-auto max-w-6xl px-4 py-4 flex items-center justify-between glass rounded-b-2xl shadow-glow">
+    <a href="/" class="flex items-center gap-3 group">
+      <img src="/logo.svg" alt="logo" class="h-9 w-9">
+      <div class="leading-tight">
+        <div class="text-lg font-semibold text-white tracking-tight group-hover:text-brand-300 transition">Deen & Dopamine</div>
+        <div class="text-[11px] text-slate-400">Islamic Psychology</div>
+      </div>
+    </a>
+    <nav class="flex items-center gap-4 text-sm">
+      <a class={`hover:text-white ${current==='/'?'text-white':'text-slate-300'}`} href="/">Home</a>
+      <a class={`hover:text-white ${current.startsWith('/posts')?'text-white':'text-slate-300'}`} href="/posts/">Blog</a>
+      <a class={`hover:text-white ${current==='/about'?'text-white':'text-slate-300'}`} href="/about">About</a>
+      <a class={`hover:text-white ${current==='/contact'?'text-white':'text-slate-300'}`} href="/contact">Contact</a>
+      <button onclick="__toggleTheme()" class="ml-2 inline-flex items-center rounded-xl px-3 py-2 bg-slate-800/60 hover:bg-slate-800 text-slate-200">
+        <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 3a9 9 0 1 0 9 9 7 7 0 0 1-9-9z"/></svg>
+      </button>
+    </nav>
+  </div>
+</header>

@@ -1,0 +1,13 @@
+---
+import Base from "./BaseLayout.astro";
+const { frontmatter } = Astro.props;
+---
+<Base title={`${frontmatter.title} — Deen & Dopamine`} current="/posts">
+  <main class="max-w-3xl mx-auto px-4 py-12">
+    <h1 class="text-3xl font-extrabold tracking-tight">{frontmatter.title}</h1>
+    <p class="mt-2 text-sm text-slate-400">{new Date(frontmatter.pubDate).toLocaleDateString()} • {frontmatter.tags?.join(', ')}</p>
+    <article class="prose prose-invert mt-6">
+      <slot />
+    </article>
+  </main>
+</Base>

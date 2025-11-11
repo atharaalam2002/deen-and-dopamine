@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: dark; }
+html { scroll-behavior: smooth; }
+body { @apply bg-slate-950 text-slate-200; }
+.glass { background: rgba(15, 23, 42, .6); backdrop-filter: blur(8px); }
+.prose p { margin: .9rem 0; }

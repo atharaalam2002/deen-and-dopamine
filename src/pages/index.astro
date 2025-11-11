@@ -1,0 +1,59 @@
+---
+import Base from "../layouts/BaseLayout.astro";
+---
+<Base current="/">
+  <section class="relative">
+    <div class="absolute inset-0 bg-grid bg-[size:32px_32px] opacity-30 pointer-events-none"></div>
+    <div class="max-w-6xl mx-auto px-4 py-20">
+      <div class="grid md:grid-cols-2 gap-10 items-center">
+        <div>
+          <div class="inline-flex items-center gap-2 text-xs px-3 py-1 rounded-full bg-brand-500/10 text-brand-200 ring-1 ring-brand-500/30">
+            <span>New</span>
+            <span class="h-1.5 w-1.5 rounded-full bg-brand-400"></span>
+            <span>Islamic Psychology Essays</span>
+          </div>
+          <h1 class="mt-5 text-4xl sm:text-5xl font-extrabold tracking-tight">
+            Faith × Neuroscience, without the fluff.
+          </h1>
+          <p class="mt-5 text-slate-300 text-lg max-w-prose">
+            Practical tools for the nafs, mental health, and meaning — rooted in Qur’an & Sunnah, translated through cognitive science.
+          </p>
+          <div class="mt-8 flex gap-4">
+            <a href="/posts/" class="px-5 py-3 rounded-2xl bg-brand-500 hover:bg-brand-600 text-slate-900 font-semibold shadow-glow">Read the Blog</a>
+            <a href="#topics" class="px-5 py-3 rounded-2xl bg-slate-800/70 hover:bg-slate-700 text-white">Explore Topics</a>
+          </div>
+        </div>
+        <div class="rounded-3xl p-8 bg-slate-900/50 ring-1 ring-white/10 shadow-glow">
+          <div class="font-arab text-2xl leading-relaxed text-slate-200">
+            ﴿ أَلَا بِذِكْرِ اللَّهِ تَطْمَئِنُّ الْقُلُوبُ ﴾
+          </div>
+          <p class="mt-4 text-sm text-slate-400">“Verily, in the remembrance of Allah do hearts find rest.” (Qur’an 13:28)</p>
+          <ul class="mt-6 grid grid-cols-2 gap-4 text-sm">
+            <li class="p-4 rounded-xl bg-slate-800/60 ring-1 ring-white/10">Habit Change & Nafs</li>
+            <li class="p-4 rounded-xl bg-slate-800/60 ring-1 ring-white/10">Anxiety & Sabr</li>
+            <li class="p-4 rounded-xl bg-slate-800/60 ring-1 ring-white/10">Attachment & Tawakkul</li>
+            <li class="p-4 rounded-xl bg-slate-800/60 ring-1 ring-white/10">Sleep & Sunnah</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="topics" class="max-w-6xl mx-auto px-4 pb-10">
+    <h2 class="text-2xl font-bold">Featured</h2>
+    <div class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <a href="/posts/nafs-vs-dopamine" class="group p-6 rounded-2xl bg-slate-900/50 ring-1 ring-white/10 hover:ring-brand-500/40 hover:shadow-glow">
+        <h3 class="font-semibold group-hover:text-brand-200">Nafs vs Dopamine: A Muslim’s Guide to Habit Change</h3>
+        <p class="mt-2 text-sm text-slate-400">Break loops and build sunnah-backed systems.</p>
+      </a>
+      <a href="/posts/attachment-tawakkul" class="group p-6 rounded-2xl bg-slate-900/50 ring-1 ring-white/10 hover:ring-brand-500/40 hover:shadow-glow">
+        <h3 class="font-semibold group-hover:text-brand-200">Attachment Styles & Tawakkul</h3>
+        <p class="mt-2 text-sm text-slate-400">From anxious/avoidant to secure-with-Allah.</p>
+      </a>
+      <a href="/posts/anger-cbt-prophetic" class="group p-6 rounded-2xl bg-slate-900/50 ring-1 ring-white/10 hover:ring-brand-500/40 hover:shadow-glow">
+        <h3 class="font-semibold group-hover:text-brand-200">Ghazab Regulation: Prophetic Tools + CBT</h3>
+        <p class="mt-2 text-sm text-slate-400">Action steps for when anger spikes.</p>
+      </a>
+    </div>
+  </section>
+</Base>

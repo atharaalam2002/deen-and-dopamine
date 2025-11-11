@@ -1,0 +1,32 @@
+---
+import Base from "../../layouts/BaseLayout.astro";
+import PostCard from "../../components/PostCard.astro";
+const posts = (await Astro.glob('./*.md')).sort((a,b) => new Date(b.frontmatter.pubDate) - new Date(a.frontmatter.pubDate));
+---
+<Base title="Blog — Deen & Dopamine" current="/posts">
+  <main class="max-w-6xl mx-auto px-4 py-14">
+    <div class="flex items-end justify-between gap-4 flex-wrap">
+      <div>
+        <h1 class="text-3xl font-extrabold tracking-tight">Blog</h1>
+        <p class="mt-2 text-slate-300">Deep dives, practical guides, and quick frameworks.</p>
+      </div>
+      <input id="search" placeholder="Search posts (client-side)..." class="px-4 py-3 rounded-xl bg-slate-900/60 ring-1 ring-white/10 min-w-[260px]" />
+    </div>
+    <div class="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-6" id="cards">
+      {posts.map(p => (
+        <PostCard href={p.url} title={p.frontmatter.title} excerpt={p.frontmatter.excerpt} pubDate={p.frontmatter.pubDate} tags={p.frontmatter.tags} />
+      ))}
+    </div>
+  </main>
+  <script>
+    // Simple search
+    const input = document.getElementById('search');
+    input?.addEventListener('input', () => {
+      const term = input.value.toLowerCase();
+      document.querySelectorAll('#cards a').forEach(card => {
+        const text = card.textContent.toLowerCase();
+        card.style.display = text.includes(term) ? '' : 'none';
+      });
+    });
+  </script>
+</Base>
