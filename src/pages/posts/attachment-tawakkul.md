@@ -1,7 +1,7 @@
 ---
-title: Attachment Styles & Tawakkul
+title: "Attachment Styles & Tawakkul"
 pubDate: 2025-11-05
-excerpt: From anxious/avoidant to secure-with-Allah.
+excerpt: "From anxious/avoidant to secure-with-Allah."
 tags: ["attachment","tawakkul","relationships"]
 ---
 
