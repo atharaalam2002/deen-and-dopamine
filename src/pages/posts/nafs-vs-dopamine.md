@@ -1,7 +1,7 @@
 ---
-title: Nafs vs Dopamine: A Muslim’s Guide to Habit Change
+title: "Nafs vs Dopamine: A Muslim’s Guide to Habit Change"
 pubDate: 2025-11-11
-excerpt: Break loops and build sunnah-backed systems.
+excerpt: "Break loops and build sunnah-backed systems."
 tags: ["habits","nafs","dopamine","sunnah"]
 ---
 
