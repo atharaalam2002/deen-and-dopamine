@@ -1,7 +1,7 @@
 ---
-title: Sunnah Sleep & REM
+title: "Sunnah Sleep & REM"
 pubDate: 2025-10-10
-excerpt: Circadian alignment + barakah.
+excerpt: "Circadian alignment + barakah."
 tags: ["sleep","sunnah","rem"]
 ---
 
