@@ -1,7 +1,7 @@
 ---
-title: Digital Modesty: Scroll Culture & Ghafla
+title: "Digital Modesty: Scroll Culture & Ghafla"
 pubDate: 2025-10-20
-excerpt: A practical detox framework.
+excerpt: "A practical detox framework."
 tags: ["dopamine","ghafla","social-media"]
 ---
 
